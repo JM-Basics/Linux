@@ -26,3 +26,34 @@ rm -r *os*
 # -r est obligatoire si on supprime des dossiers 
 # * signifie "n'importe quoi". Ici, tout les dossiers 
 # qui contiennent "os"
+
+touch fichier.jpg image.jpg
+# Permet de creer des fichiers. Ici, fichier.jpg et 
+# image.jpg
+
+cp fichier.jpg ../Images/copyFichier.jpg
+# Permet de copier un ou plusiers fichier ( utilise * )
+# Ici, on copie ficher.jpg dans le dossier Images et 
+# on le renome copyFichier.jpg (en même temps)
+
+mv *.jpg ../Images/
+# Permet de deplacer tous les fichiers.jpg pour les 
+# placer dans le dossier Images
+
+touch script.sh
+
+chmod ugo-rwx script.sh
+# Permet de changer les permissions pour:
+# User
+# Group
+# Others
+# les 3 types de permission sont:
+# Read
+# Write
+# eXecute 
+# Ici, on retire toutes les permissions a tout le monde
+
+chmod u+rwx script.sh 
+# Ici, on ajoute les permissions de lecture et 
+# execution pour l'utilisateur. Ce fichier est devenu un 
+# executable (programme)
